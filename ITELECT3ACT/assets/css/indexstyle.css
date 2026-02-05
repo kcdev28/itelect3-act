@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.hero-section {
+    padding: 80px 0;
+    background-color: #f2f2f2;
+    color: black    ;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-section .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    border-radius: 15px;
+    min-height: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.3);
+}
+
+.features-section {
+    background-color: white;
+}
+
+.features-section .card {
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.features-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.feature-icon {
+    display: inline-block;
+    padding: 15px;
+    background-color: rgba(102, 126, 234, 0.1);
+    border-radius: 50%;
+}
+
+.content-section {
+    height: 100vh;
+    padding: 60px 0;
+}
+
+.content-section .card {
+    border-radius: 15px;
+    overflow: hidden;
+   
+}
+
+.content-section .card-header {
+    border-bottom: none;
+}
+
+.content-section .form-label {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.content-section .form-control {
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.content-section .form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.content-section .btn {
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.content-section .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+        text-align: center;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section .d-flex {
+        flex-direction: column;
+    }
+    
+    .hero-section .btn {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    
+    .image-container {
+        margin-top: 2rem;
+    }
+}
+
+

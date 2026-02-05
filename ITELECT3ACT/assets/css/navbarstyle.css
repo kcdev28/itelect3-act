@@ -1,0 +1,25 @@
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: blueviolet;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 0 0.5rem;
+    color: white;
+}
+
+.nav-link:hover {
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    font-weight: 600;
+}
